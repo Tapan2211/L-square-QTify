@@ -7,6 +7,7 @@ function Card({ data, type }) {
     switch (type) {
       case "album": {
         const { image, title, follows, slug, songs } = data;
+        console.log("Albums_123:",data)
         return (
           <Tooltip title={`${songs.length} songs`} placement="top" arrow>
             <Link to={`/album/${slug}`}>

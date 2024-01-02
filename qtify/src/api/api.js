@@ -3,8 +3,6 @@ import axios from 'axios';
 export const BACKEND_POINT ="https://qtify-backend-labs.crio.do";
 
 export const fetchTopAlbum = async() =>{
-//https://qtify-backend-labs.crio.do/albums/top
-//https://qtify-backend-labs.crio.do/ablums/top
     try {
         const response = await axios.get(`${BACKEND_POINT}/albums/top`);
         return response.data;
