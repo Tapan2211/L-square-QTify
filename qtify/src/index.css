@@ -5,24 +5,25 @@
 }
 
 *,
-*::after{
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
-*{
+* {
   margin: 0;
 }
 html,
-body{
+body {
   height: 100%;
 }
-body{
-  font-family: "Poppins",sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
-  -webkit-font-smoothing:antialiased;
+  -webkit-font-smoothing: antialiased;
   background-color: var(--color-black);
   color: var(--color-white);
 }
+
 img,
 picture,
 video,
@@ -34,7 +35,7 @@ svg {
 input,
 button,
 textarea,
-select{
+select {
   font: inherit;
 }
 p,
@@ -43,7 +44,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   overflow-wrap: break-word;
 }
 #root,

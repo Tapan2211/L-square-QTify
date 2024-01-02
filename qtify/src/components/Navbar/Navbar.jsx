@@ -3,13 +3,14 @@ import styles from "./Navbar.module.css";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
 import Button from "../Button/Button";
+import { Link } from "@mui/material";
 
 function Navbar({ searchDate }) {
   return (
     <nav className={styles.navbar}>
-      <a href="/">
+      <Link to="/">
         <Logo />
-      </a>
+      </Link>
       <Search
         placeholder={"Search a song of your choice"}
         searchData={searchDate}
