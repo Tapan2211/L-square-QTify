@@ -30,12 +30,11 @@ export const fetchSongs = async () => {
     }
 }
 
-export const fetchFilters = async() =>{
-
+export const fetchFilters = async () => {
     try {
-        const response = await axios.get(`${BACKEND_POINT}/ablums/geners`);
+        const response = await axios.get(`${BACKEND_POINT}/genres`);
         return response.data;
-    } catch (error) {
-        console.log(error)
+    } catch (e) {
+        console.error(e);
     }
 }
